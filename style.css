@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: rgb( 0, 50, 70);
+  padding: 5% 10% 5% 5%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+main {
+  position: absolute;
+}
+/* LOGO */
+body > main > img { 
+  margin-left: 5%;
+}
+/* TITLE */
+h1 {
+  margin: 3% 0% 0% 5%;
+  font-size: 800%;
+  line-height: 110%;
+  color: rgb( 0, 240, 190);
+}
+/* TEXT */
+p {
+  margin: 2% 0% 0% 5%;
+  color: rgba( 255, 255, 255, 0.7);
+  font-size: 150%;
+  font-weight: 400;
+  width: 50%;
+}
+/* BUTTON */
+button {
+  margin: 2% 0% 5% 5%;
+  display: block;
+  padding: 20px 20px;
+  font-size: 120%;
+  font-weight: 700;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb( 0, 240, 190);
+  color: rgb( 0, 50, 70);
+  transition: background-color 0.4s;
+}
+button:hover {
+  background-color: rgb(0, 160, 100);
+}
+/* TWITTER */
+a {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba( 255, 255, 255, 0.7);
+  font-size: 120%
+}
+/* USERS */
+.users {
+  width: 100vw;
+  height: 100vh;
+}
+.user {
+  position: absolute;
+  z-index: -1;
+}
+.users .user:nth-child(1) {
+  top: 14%;
+  left: 4%;
+}
+.users .user:nth-child(2) {
+  right: 52%;
+  top: 10%;
+}
+.users .user:nth-child(3) {
+  right: 40%;
+  top: 6%;
+}
+.users .user:nth-child(4) {
+  bottom: 20%;
+  right: 20%;
+}
+.users .user:nth-child(5) {
+  right: 30%;
+  top: 30%;
+}
+.users .user:nth-child(6) {
+  right: 60%;
+  top: 35%;
+}
+/* MEDIA */
+@media (max-width: 1460px) {
+  .users .user:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 500%;
+    line-height: 150%;
+  }
+  p {
+    margin: 5% 0% 0% 5%;
+  }
+  button {
+    margin: 5% 0% 5% 5%;
+  }
+}
+@media (max-width: 680px) {
+  h1 {
+    font-size: 300%;
+  }
+  p {
+    font-size: 120%;
+  }
+}
+@media (max-width: 550px) {
+  .users .user:nth-child(1) {
+    display: none;
+  }
+}
+@media (min-height: 1200px) {
+  h1 {
+    line-height: 180%;
+  }
+}
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 1000%;
+  }
+  p {
+    font-size: 250%;
+  }
+  a {
+    font-size: 250%;
+  }
+    .user {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media (min-height: 1650px){
+  h1 {
+    margin-top: 10%;
+  }
+  p {
+    margin-top: 8%;
+  }
+  button {
+    margin-top: 8%;
+  }
+}
